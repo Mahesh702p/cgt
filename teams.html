@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams | Cricket Stats</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Style for the "Teams" Heading */
+        
+
+        /* Additional CSS for Teams Layout */
+        .teams-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two teams per row */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .team-card {
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-card h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+            padding: 5px 10px;
+            border: 2px solid rgb(0, 0, 0);  /* Orange border */
+            border-radius: 5px;
+            background-color: white;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .team-card h2:hover {
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        .team-card ul {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            list-style: none;
+        }
+
+        .team-card ul li {
+            width: 50%; /* Split the list into two columns */
+            text-align: center;
+            margin: 5px 0;
+            color: #555;
+        }
+        
+        /* Body font and margin reset */
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            .teams-container {
+                grid-template-columns: 1fr; /* One team per row */
+            }
+
+            .team-card ul {
+                display: block; /* Display players in a single column */
+                padding: 0;
+            }
+
+            .team-card ul li {
+                width: 100%; /* Ensure each player takes up the full width */
+                text-align: left; /* Align the text to the left */
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Points Table</a></li>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="teams.html" class="active">Teams</a></li>
+        </ul>
+    </nav>
+
+    <!-- Teams Section -->
+    <section>
+        <h1>Teams</h1>
+        <div class="teams-container">
+            <!-- Team 1 -->
+            <div class="team-card">
+                <h2>BCCI</h2>
+                <ul>
+                    <li>Player 1</li>
+                    <li>Player 2</li>
+                    <li>Player 3</li>
+                    <li>Player 4</li>
+                    <li>Player 5</li>
+                    <li>Player 6</li>
+                    <li>Player 7</li>
+                    <li>Player 8</li>
+                    <li>Player 9</li>
+                    <li>Player 10</li>
+                    <li>Player 11</li>
+                    <li>Player 12</li>
+                    <li>Player 13</li>
+                    <li>Player 14</li>
+                    <li>Player 15</li>
+                    <li>Player 16</li>
+                    <li>Player 17</li>
+                    <li>Player 18</li>
+                    <li>Player 19</li>
+                    <li>Player 20</li>
+                </ul>
+            </div>
+
+            <!-- Team 2 -->
+            <div class="team-card">
+                <h2>The Blues</h2>
+                <ul>
+                    <li>Player 1</li>
+                    <li>Player 2</li>
+                    <li>Player 3</li>
+                    <li>Player 4</li>
+                    <li>Player 5</li>
+                    <li>Player 6</li>
+                    <li>Player 7</li>
+                    <li>Player 8</li>
+                    <li>Player 9</li>
+                    <li>Player 10</li>
+                    <li>Player 11</li>
+                    <li>Player 12</li>
+                    <li>Player 13</li>
+                    <li>Player 14</li>
+                    <li>Player 15</li>
+                    <li>Player 16</li>
+                    <li>Player 17</li>
+                    <li>Player 18</li>
+                    <li>Player 19</li>
+                    <li>Player 20</li>
+                </ul>
+            </div>
+
+            <!-- Team 3 -->
+            <div class="team-card">
+                <h2>Mahila 11</h2>
+                <ul>
+                    <li>Player 1</li>
+                    <li>Player 2</li>
+                    <li>Player 3</li>
+                    <li>Player 4</li>
+                    <li>Player 5</li>
+                    <li>Player 6</li>
+                    <li>Player 7</li>
+                    <li>Player 8</li>
+                    <li>Player 9</li>
+                    <li>Player 10</li>
+                    <li>Player 11</li>
+                    <li>Player 12</li>
+                    <li>Player 13</li>
+                    <li>Player 14</li>
+                    <li>Player 15</li>
+                    <li>Player 16</li>
+                    <li>Player 17</li>
+                    <li>Player 18</li>
+                    <li>Player 19</li>
+                    <li>Player 20</li>
+                </ul>
+            </div>
+
+            <!-- Team 4 -->
+            <div class="team-card">
+                <h2>Sand Paper XI</h2>
+                <ul>
+                    <li>Player 1</li>
+                    <li>Player 2</li>
+                    <li>Player 3</li>
+                    <li>Player 4</li>
+                    <li>Player 5</li>
+                    <li>Player 6</li>
+                    <li>Player 7</li>
+                    <li>Player 8</li>
+                    <li>Player 9</li>
+                    <li>Player 10</li>
+                    <li>Player 11</li>
+                    <li>Player 12</li>
+                    <li>Player 13</li>
+                    <li>Player 14</li>
+                    <li>Player 15</li>
+                    <li>Player 16</li>
+                    <li>Player 17</li>
+                    <li>Player 18</li>
+                    <li>Player 19</li>
+                    <li>Player 20</li>
+                </ul>
+            </div>
+
+            <!-- Team 5 -->
+            <div class="team-card">
+                <h2>Worst Playing XI</h2>
+                <ul>
+                    <li>Player 1</li>
+                    <li>Player 2</li>
+                    <li>Player 3</li>
+                    <li>Player 4</li>
+                    <li>Player 5</li>
+                    <li>Player 6</li>
+                    <li>Player 7</li>
+                    <li>Player 8</li>
+                    <li>Player 9</li>
+                    <li>Player 10</li>
+                    <li>Player 11</li>
+                    <li>Player 12</li>
+                    <li>Player 13</li>
+                    <li>Player 14</li>
+                    <li>Player 15</li>
+                    <li>Player 16</li>
+                    <li>Player 17</li>
+                    <li>Player 18</li>
+                    <li>Player 19</li>
+                    <li>Player 20</li>
+                </ul>
+            </div>
+
+            <!-- Team 6 -->
+            <div class="team-card">
+                <h2>Uncertainty Principle</h2>
+                <ul>
+                    <li>Player 1</li>
+                    <li>Player 2</li>
+                    <li>Player 3</li>
+                    <li>Player 4</li>
+                    <li>Player 5</li>
+                    <li>Player 6</li>
+                    <li>Player 7</li>
+                    <li>Player 8</li>
+                    <li>Player 9</li>
+                    <li>Player 10</li>
+                    <li>Player 11</li>
+                    <li>Player 12</li>
+                    <li>Player 13</li>
+                    <li>Player 14</li>
+                    <li>Player 15</li>
+                    <li>Player 16</li>
+                    <li>Player 17</li>
+                    <li>Player 18</li>
+                    <li>Player 19</li>
+                    <li>Player 20</li>
+                </ul>
+            </div>
+            <div class="team-card">
+                <h2>SKIBIDI</h2>
+                <ul>
+                    <li>Player 1</li>
+                    <li>Player 2</li>
+                    <li>Player 3</li>
+                    <li>Player 4</li>
+                    <li>Player 5</li>
+                    <li>Player 6</li>
+                    <li>Player 7</li>
+                    <li>Player 8</li>
+                    <li>Player 9</li>
+                    <li>Player 10</li>
+                    <li>Player 11</li>
+                    <li>Player 12</li>
+                    <li>Player 13</li>
+                    <li>Player 14</li>
+                    <li>Player 15</li>
+                    <li>Player 16</li>
+                    <li>Player 17</li>
+                    <li>Player 18</li>
+                    <li>Player 19</li>
+                    <li>Player 20</li>
+                </ul>
+            </div>
+            <div class="team-card">
+                <h2>Lagaan 11</h2>
+                <ul>
+                    <li>Player 1</li>
+                    <li>Player 2</li>
+                    <li>Player 3</li>
+                    <li>Player 4</li>
+                    <li>Player 5</li>
+                    <li>Player 6</li>
+                    <li>Player 7</li>
+                    <li>Player 8</li>
+                    <li>Player 9</li>
+                    <li>Player 10</li>
+                    <li>Player 11</li>
+                    <li>Player 12</li>
+                    <li>Player 13</li>
+                    <li>Player 14</li>
+                    <li>Player 15</li>
+                    <li>Player 16</li>
+                    <li>Player 17</li>
+                    <li>Player 18</li>
+                    <li>Player 19</li>
+                    <li>Player 20</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
