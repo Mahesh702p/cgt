@@ -1,0 +1,174 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #333;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #8de4ff;
+}
+
+/* Section Styling */
+section {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.stat-section ul, .team ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.stat-section li, .team li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.team {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* General Styles for All Devices */
+.teams-container, .stats-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
+    gap: 20px;
+    padding: 20px;
+}
+
+.team-card, .stat-card {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover, .stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card h2, .stat-card h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.team-card ul, .stat-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.team-card ul li, .stat-card ul li {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Media Query for Mobile View */
+@media screen and (max-width: 768px) {
+    .teams-container, .stats-container {
+        grid-template-columns: 1fr; /* One column for mobile devices */
+    }
+}
+/* Points Table Row or Cell Styles */
+.points-table td {
+    cursor: pointer; /* Changes cursor to pointer for interactivity */
+    transition: transform 0.2s ease; /* Smooth transition for pop effect */
+}
+
+/* Pop Animation Class */
+.pop {
+    animation: pop 0.3s ease forwards;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Slightly increase size */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+

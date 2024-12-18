@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teams | Cricket Stats</title>
+    
+        <!-- Link to Google Font (Example: Quicksand) -->
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a href="index.html" class="navbar-item active">Points Table</a></li>
+            <li><a href="stats.html" class="navbar-item">Stats</a></li>
+            <li><a href="teams.html" class="navbar-item">Teams</a></li>
+        </ul>
+    </nav>
+
+    <!-- Points Table -->
+    <section class="points-table-section">
+        <h1>Points Table</h1>
+        <table class="points-table">
+            <thead>
+                <tr>
+                    <th>Position</th>
+                    <th>Team</th>
+                    <th>Matches</th>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Points</th>
+                    <th>Net Run Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>BCCI</td>
+                    <td>8</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>12</td>
+                    <td>+0.45</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mahila 11</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>10</td>
+                    <td>+0.32</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Worst Playing XI</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>-0.12</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>The Blues</td>
+                    <td>8</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>-0.24</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Lagaan 11</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>+0.10</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>SKIBIDI</td>
+                    <td>8</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>-0.05</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Uncertainty Principle</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>-0.35</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Sand Paper XI</td>
+                    <td>8</td>
+                    <td>1</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>-0.55</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- JavaScript for Pop Effect
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const rows = document.querySelectorAll(".points-table tbody tr");
+
+            rows.forEach(row => {
+                row.addEventListener("click", () => {
+                    row.classList.add("pop");
+
+                    setTimeout(() => {
+                        row.classList.remove("pop");
+                    }, 300); // Match animation duration
+                });
+            });
+        });
+    </script> -->
+</body>
+</html>
+
