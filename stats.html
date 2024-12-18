@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stats | Cricket Stats</title>
-    
+
     <link rel="stylesheet" href="style.css">
     <!-- Link to Google Font (Example: Quicksand) -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
@@ -16,10 +16,59 @@
             margin: 0;
             padding: 0;
         }
-         h1 {
+
+        h1 {
             font-size: 24px;
             color: #333;
-        } 
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #555;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .stat-section {
+            margin: 53px auto;
+            text-align: center;
+        }
+
+        table {
+            width: 50%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+
+        /* Make tables responsive */
+        @media screen and (max-width: 768px) {
+            table {
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            table {
+                width: 100%;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -39,21 +88,212 @@
         <!-- Orange Cap -->
         <div class="stat-section">
             <h2>🏏 Orange Cap (Most Runs)</h2>
-            <ul>
-                <li>Player 1 - 450 Runs</li>
-                <li>Player 2 - 420 Runs</li>
-                <li>Player 3 - 390 Runs</li>
-            </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Runs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Najmul Shanto (The Blues)</td>
+                        <td>158</td>
+                    </tr>
+                    <tr>
+                        <td>Gaby Lewis (BCCI)</td>
+                        <td>110</td>
+                    </tr>
+                    <tr>
+                        <td>Gaby Lewis (The Blues)</td>
+                        <td>105</td>
+                    </tr>
+                    <tr>
+                        <td>Pathum Nissanka (Mahila 11)</td>
+                        <td>104</td>
+                    </tr>
+                    <tr>
+                        <td>Andy Flower (Mahila 11)</td>
+                        <td>92</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <!-- Purple Cap -->
         <div class="stat-section">
             <h2>🎯 Purple Cap (Most Wickets)</h2>
-            <ul>
-                <li>Player A - 18 Wickets</li>
-                <li>Player B - 15 Wickets</li>
-                <li>Player C - 14 Wickets</li>
-            </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Wickets</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Amelia Kerr (Uncertainty Principle)</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Vernon Philander</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andrew Symonds(Lagaan 11)</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>N Mlaba (BCCI)</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Kate Cross (The Blues)</td>
+                        <td>5</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Most Sixes -->
+        <div class="stat-section">
+            <h2>🏏 Most Sixes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Sixes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Najmul Shanto (The Blues)</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Gaby Lewis (BCCI)</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Gaby Lewis (The Blues)</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Jemimah Rodrigues (The Blues)</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Gary Kirsten (Mahila 11)</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Most Fours -->
+        <div class="stat-section">
+            <h2>🏏 Most Fours</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Fours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pathum Nissanka (Mahila 11)</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>Najmul Shanto (The Blues)</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>Andy Flower (Mahila 11)</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>Ollie Pope (BCCI)</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Gaby Lewis (BCCI)</td>
+                        <td>7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Most Boundaries -->
+        <div class="stat-section">
+            <h2>🏏 Most Boundaries</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Boundaries</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Najmul Shanto (The Blues)</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Pathum Nissanka (Mahila 11)</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Gaby Lewis (BCCI)</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>Jemimah Rodrigues (The Blues)</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>Gaby Lewis (The Blues)</td>
+                        <td>11</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Most Half Centuries -->
+        <div class="stat-section">
+            <h2>🏏 Most Half Centuries</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Half Centuries</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Najmul Shanto (The Blues)</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Gaby Lewis (BCCI)</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Gaby Lewis (The Blues)</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Pathum Nissanka (Mahila 11)</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Andy Flower (Mahila 11)</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 </body>
